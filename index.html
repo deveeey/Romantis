@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Pesan ke Anies</title>
+        <style>
+            body {
+                  background-color: #111;
+                        color: #fff;
+                              font-family: 'Courier New', Courier, monospace;
+                                    padding: 20px;
+                                        }
+
+                                            .container {
+                                                  max-width: 700px;
+                                                        margin: auto;
+                                                              background-color: #222;
+                                                                    border-radius: 15px;
+                                                                          padding: 30px;
+                                                                                box-shadow: 0 0 10px rgba(255,255,255,0.1);
+                                                                                    }
+
+                                                                                        h1 {
+                                                                                              color: #ff69b4;
+                                                                                                    text-align: center;
+                                                                                                        }
+
+                                                                                                            #pesan-list p {
+                                                                                                                  background-color: #333;
+                                                                                                                        padding: 12px;
+                                                                                                                              border-radius: 8px;
+                                                                                                                                    margin: 10px 0;
+                                                                                                                                          font-size: 16px;
+                                                                                                                                                word-wrap: break-word;
+                                                                                                                                                    }
+
+                                                                                                                                                        input, button {
+                                                                                                                                                              padding: 12px;
+                                                                                                                                                                    margin-top: 10px;
+                                                                                                                                                                          border: none;
+                                                                                                                                                                                border-radius: 5px;
+                                                                                                                                                                                      font-size: 16px;
+                                                                                                                                                                                          }
+
+                                                                                                                                                                                              input {
+                                                                                                                                                                                                    width: 75%;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                            button {
+                                                                                                                                                                                                                  background-color: #ff69b4;
+                                                                                                                                                                                                                        color: white;
+                                                                                                                                                                                                                              cursor: pointer;
+                                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                                      button:hover {
+                                                                                                                                                                                                                                            background-color: #ff85c1;
+                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                  </style>
+                                                                                                                                                                                                                                                  </head>
+                                                                                                                                                                                                                                                  <body>
+                                                                                                                                                                                                                                                    <div class="container">
+                                                                                                                                                                                                                                                        <h1>📡 Pesan Buat Anies</h1>
+                                                                                                                                                                                                                                                            <div id="pesan-list">
+                                                                                                                                                                                                                                                                  <p>HAI ANIESSS</p>
+                                                                                                                                                                                                                                                                        <p>MASIH BETMUTT KARNA SI KUE KUE IT KH</p>
+                                                                                                                                                                                                                                                                              <p>AK CUMAN MAU BILANGGG</p>
+                                                                                                                                                                                                                                                                                    <p>FUCK U 🤪🤪🤪🖕🖕🖕</p>
+                                                                                                                                                                                                                                                                                          <p>GA DONG</p>
+                                                                                                                                                                                                                                                                                                <p>I LOVE U ❤</p>
+                                                                                                                                                                                                                                                                                                    </div>
+
+                                                                                                                                                                                                                                                                                                        <input type="text" id="pesan-input" placeholder="Tulis pesan rahasia lu...">
+                                                                                                                                                                                                                                                                                                            <button onclick="tambahPesan()">Kirim</button>
+                                                                                                                                                                                                                                                                                                              </div>
+
+                                                                                                                                                                                                                                                                                                                <script>
+                                                                                                                                                                                                                                                                                                                    function tambahPesan() {
+                                                                                                                                                                                                                                                                                                                          const input = document.getElementById('pesan-input');
+                                                                                                                                                                                                                                                                                                                                const pesan = input.value.trim();
+                                                                                                                                                                                                                                                                                                                                      if (pesan !== "") {
+                                                                                                                                                                                                                                                                                                                                              const list = document.getElementById('pesan-list');
+                                                                                                                                                                                                                                                                                                                                                      const item = document.createElement('p');
+                                                                                                                                                                                                                                                                                                                                                              item.textContent = pesan;
+                                                                                                                                                                                                                                                                                                                                                                      list.appendChild(item);
+                                                                                                                                                                                                                                                                                                                                                                              input.value = "";
+                                                                                                                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                                                                                          </script>
+                                                                                                                                                                                                                                                                                                                                                                                          </body>
+                                                                                                                                                                                                                                                                                                                                                                                          </html>
